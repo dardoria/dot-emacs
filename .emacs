@@ -29,7 +29,11 @@
 (setq slime-net-coding-system 'utf-8-unix)
 (setq slime-load-failed-fasl 'never)
 
-;;;; web-node
+;;;; org-mode
+(setq org-todo-keyword-faces
+      '(("TODO" . org-warning) ("MAYBE" . org-warning)))
+
+;;;; web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.soy\\'" . web-mode))
 
