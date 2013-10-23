@@ -6,6 +6,8 @@
 (tool-bar-mode -1)
 (show-paren-mode t)
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 (require 'package)
 ;; Add the user-contributed repository
 (add-to-list 'package-archives
